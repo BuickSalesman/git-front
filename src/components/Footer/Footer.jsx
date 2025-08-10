@@ -1,5 +1,5 @@
 export function Footer() {
-    reutrn(
+    return (
         <div>
             <button>New Repo</button>
         </div>

@@ -5,7 +5,7 @@ import { RepoDropdownDisplay } from "./RepoDropdownDisplay/RepoDropdownDisplay.j
 
 export function RepoDisplayCard({ id }) {
     return (
-        <div className="repo-card">
+        <div className={`repo-card ${id === "0" ? "first-card" : ""}`}>
             <RepoTitleTool id={id} />
             <RepoDropdownDisplay />
         </div>

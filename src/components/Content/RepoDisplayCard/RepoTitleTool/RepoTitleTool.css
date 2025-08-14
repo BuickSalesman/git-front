@@ -2,13 +2,33 @@
     outline: 1px black solid;
     border-radius: 3vh;
     background-color: white;
-    max-height: 12vh;
-    min-height: 12vh;
+    height: 12vh;
+    display: flex;
+    margin-top: 1vh;
+    width: 96vw;
+}
+
+.title-tool-left {
+    width: 23vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.title-tool-center {
+    width: 50vw;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 1vh;
-    width: 97vw;
+}
+
+.title-tool-right {
+    width: 23vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
 }
 
 .multi-commit-tool-ph {
@@ -22,4 +42,21 @@
 .swipe-indicator {
     writing-mode: vertical-rl;
     text-orientation: upright;
+    width: 3vw;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.title-tool-left .swipe-indicator {
+    position: absolute;
+    left: 1vw;
+    margin-bottom: 1vh;
+}
+
+.title-tool-right .swipe-indicator {
+    position: absolute;
+    right: 1vw;
+    margin-bottom: 1vh;
 }

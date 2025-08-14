@@ -3,10 +3,10 @@ import "./RepoDisplayCard.css"
 import { RepoTitleTool } from "./RepoTitleTool/RepoTitleTool.jsx"
 import { RepoDropdownDisplay } from "./RepoDropdownDisplay/RepoDropdownDisplay.jsx"
 
-export function RepoDisplayCard() {
+export function RepoDisplayCard({ id }) {
     return (
         <div className="repo-card">
-            <RepoTitleTool />
+            <RepoTitleTool id={id} />
             <RepoDropdownDisplay />
         </div>
     )

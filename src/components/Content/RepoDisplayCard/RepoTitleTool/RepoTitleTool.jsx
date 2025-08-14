@@ -6,7 +6,7 @@ import { Heatmap } from "../Heatmap/Heatmap.jsx"
 import { QuickCommitButton } from "./QuickCommitButton/QuickCommitButton.jsx"
 import { MultiCommitTool } from "./MultiCommitTool/MultiCommitTool.jsx"
 
-export function RepoTitleTool() {
+export function RepoTitleTool({ id }) {
     return (
         <div className="title-tool">
             <div className="hidden-buttons-left">
@@ -20,7 +20,7 @@ export function RepoTitleTool() {
                 </button>
             </div>
             <div className="title-tool-center">
-                <div className="repo-name">Repo Name</div>
+                <div className="repo-name">Repo Name: {id}</div>
             </div>
             <div className="title-tool-right">
                 <QuickCommitButton />

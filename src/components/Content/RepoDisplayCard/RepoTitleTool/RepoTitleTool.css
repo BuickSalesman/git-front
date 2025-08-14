@@ -60,3 +60,13 @@
     right: 1vw;
     margin-bottom: 1vh;
 }
+
+.heatmap-dropdown-button {
+    position: absolute;
+    right: 1vw;
+}
+
+.quick-commit-button {
+    position: absolute;
+    left: 4vw;
+}

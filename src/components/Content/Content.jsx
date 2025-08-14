@@ -1,7 +1,13 @@
 import "./Content.css"
 
+import { RepoDisplayCard } from "./RepoDisplayCard/RepoDisplayCard.jsx"
+
 export function Content() {
     return (
-        <div className="content">yo whaddup son</div>
+        <div className="content">
+            <RepoDisplayCard />
+            <RepoDisplayCard />
+            <RepoDisplayCard />
+        </div>
     )
 }

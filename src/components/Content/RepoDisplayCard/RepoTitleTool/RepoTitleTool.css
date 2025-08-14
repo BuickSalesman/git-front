@@ -1,0 +1,9 @@
+.title-tool {
+    outline: 1px black solid;
+    border-radius: 3vh;
+    background-color: white;
+    height: 12vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

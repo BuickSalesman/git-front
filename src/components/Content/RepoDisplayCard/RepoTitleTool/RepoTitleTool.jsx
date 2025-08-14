@@ -2,6 +2,7 @@ import "./RepoTitleTool.css"
 
 export function RepoTitleTool() {
     return (
-        <div>title bar homie</div>
+        <div className="title-tool">title bar homie</div>
     )
 }
+

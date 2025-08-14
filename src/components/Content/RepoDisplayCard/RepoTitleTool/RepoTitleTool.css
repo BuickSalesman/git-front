@@ -10,3 +10,16 @@
     margin-top: 1vh;
     width: 97vw;
 }
+
+.multi-commit-tool-ph {
+    display: none;
+}
+
+.hidden-buttons-left {
+    display: none;
+}
+
+.swipe-indicator {
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+}

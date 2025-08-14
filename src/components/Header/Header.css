@@ -1,6 +1,29 @@
-html,
-body {
-    color: blue;
-    height: 100px;
-    width: 100px;
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: red;
+    height: 10vh;
+}
+
+.header nav {
+    height: 100%;
+    width: 100%;
+}
+
+#title-container {
+    max-width: 40vw;
+    background-color: teal;
+    float: left;
+    margin-top: 3vh;
+    margin-left: 3vw;
+}
+
+#login-container {
+    max-width: 40vw;
+    background-color: gold;
+    float: right;
+    margin-top: 3vh;
+    margin-right: 3vw;
 }

@@ -1,10 +1,17 @@
+import "./Header.css"
+
 export function Header() {
     return (
-        <header>
+        <div className="header">
             <nav>
-                <span>Git It Together</span> | <a href="">Login</a>
+                <div id="title-container">
+                    <span>Git It Together</span>
+                </div>
+                <div id="login-container">
+                    <a href="">Sign up</a> <>|</> <a href="">Login</a>
+                </div>
             </nav>
-        </header>
+        </div>
 
     )
 }

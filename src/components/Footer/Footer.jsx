@@ -1,6 +1,8 @@
+import "./Footer.css"
+
 export function Footer() {
     return (
-        <div>
+        <div className="footer">
             <button>New Repo</button>
         </div>
     )

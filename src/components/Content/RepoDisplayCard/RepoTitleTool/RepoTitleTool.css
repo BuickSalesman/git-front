@@ -1,8 +1,8 @@
 .title-tool {
     outline: 1px black solid;
-    border-radius: 3vh;
+    border-radius: 2vh;
     background-color: white;
-    height: 12vh;
+    height: 8vh;
     display: flex;
     margin-top: 1vh;
     width: 96vw;

@@ -11,6 +11,9 @@ export function Content() {
             <RepoDisplayCard />
             <RepoDisplayCard />
             <RepoDisplayCard />
+            <RepoDisplayCard />
+            <RepoDisplayCard />
+            <RepoDisplayCard />
         </div>
     )
 }

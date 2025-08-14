@@ -2,8 +2,11 @@
     outline: 1px black solid;
     border-radius: 3vh;
     background-color: white;
-    height: 12vh;
+    max-height: 12vh;
+    min-height: 12vh;
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-top: 1vh;
+    width: 97vw;
 }

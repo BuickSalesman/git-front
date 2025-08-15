@@ -9,7 +9,7 @@ export function TitleToolLeft() {
         <div className="title-tool-left">
             <DeleteRepoButton />
             <UndoCommitButton />
-            <div className="swipe-indicator">...</div>
+            <div className="swipe-indicator">⋮</div>
             <HeatmapDropdownButton />
         </div>
     )

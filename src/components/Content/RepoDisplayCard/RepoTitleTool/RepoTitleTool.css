@@ -13,7 +13,6 @@
     display: inline-flex;
     justify-content: center;
     align-items: center;
-    position: relative;
     overflow: hidden;
 }
 
@@ -26,46 +25,16 @@
 
 .title-tool-right {
     width: 23vw;
-    display: flex;
+    display: inline-flex;
     justify-content: center;
     align-items: center;
-    position: relative;
-}
-
-.multi-commit-tool-ph {
-    display: none;
 }
 
 .swipe-indicator {
-    writing-mode: vertical-rl;
-    text-orientation: upright;
     width: 3vw;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.title-tool-left .swipe-indicator {
-    position: absolute;
-    left: 1vw;
-    margin-bottom: 1vh;
-}
-
-.title-tool-right .swipe-indicator {
-    position: absolute;
-    right: 1vw;
-    margin-bottom: 1vh;
 }
 
 .heatmap-dropdown-button {
-    position: absolute;
-    right: 1vw;
     height: 3vh;
     width: 14vw;
-}
-
-.quick-commit-button {
-    position: absolute;
-    left: 4vw;
 }

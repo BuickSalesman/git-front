@@ -7,7 +7,7 @@ export function TitleToolRight() {
     return (
         <div className="title-tool-right">
             <QuickCommitButton />
-            <div className="swipe-indicator">...</div>
+            <div className="swipe-indicator">⋮</div>
             <MultiCommitTool />
         </div>
     )

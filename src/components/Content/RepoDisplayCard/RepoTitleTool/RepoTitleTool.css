@@ -1,24 +1,19 @@
 .title-tool {
     outline: 1px black solid;
     border-radius: 2vh;
+    box-shadow: 1px 1px 1px 1px;
     background-color: white;
     height: 8vh;
-    display: flex;
     margin-top: 1vh;
     width: 96vw;
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) 50vw minmax(0, 1fr);
 }
-
 
 .title-tool-center {
-    width: 50vw;
+    height: 8vh;
+    background-color: white;
     display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.title-tool-right {
-    width: 23vw;
-    display: inline-flex;
     justify-content: center;
     align-items: center;
 }

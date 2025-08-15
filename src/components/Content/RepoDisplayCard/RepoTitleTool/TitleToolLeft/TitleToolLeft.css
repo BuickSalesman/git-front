@@ -1,7 +1,42 @@
+.title-tool-left {
+    height: 8vh;
+    overflow: hidden;
+}
+
 .left-track {
-    width: 23vw;
+    height: 8vh;
     display: inline-flex;
     justify-content: center;
     align-items: center;
-    overflow: hidden;
+    gap: 1vh;
+}
+
+.hidden-buttons-left {
+    width: 17vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2vw;
+}
+
+.hidden-buttons-left button {
+    box-shadow: 1px 1px 0px 0px;
+    max-height: 5vh;
+}
+
+.left-swipe-button {
+    width: 1vw;
+    height: 6vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+}
+
+.left-track.show-swiped {
+    transform: translateX(0);
+}
+
+.left-track.show-closed {
+    transform: translateX(-18vw);
 }

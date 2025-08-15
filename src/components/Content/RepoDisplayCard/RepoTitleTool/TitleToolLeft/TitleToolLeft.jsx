@@ -11,13 +11,17 @@ export function TitleToolLeft() {
     const [isSwiped, setIsSwiped] = useState(false)
 
     return (
-        <div className={`left-track ${isSwiped ? "show-swiped" : "show-closed"}`}>
-            <DeleteRepoButton />
-            <UndoCommitButton />
-            <button className="left-swipe-button" onClick={() => setIsSwiped(true)}>
-                ⋮
-            </button>
-            <HeatmapDropdownButton />
-        </ div >
+        <div className="title-tool-left">
+            <div className={`left-track ${isSwiped ? "show-swiped" : "show-closed"}`}>
+                <div className="hidden-buttons-left">
+                    <DeleteRepoButton />
+                    <UndoCommitButton />
+                </div>
+                <button className="left-swipe-button" onClick={() => setIsSwiped(prev => !prev)}>
+                    ⋮
+                </button>
+                <HeatmapDropdownButton />
+            </ div >
+        </div>
     )
 }

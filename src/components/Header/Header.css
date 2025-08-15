@@ -3,9 +3,10 @@
     top: 0;
     left: 0;
     right: 0;
-    background-color: red;
+    background-color: whitesmoke;
     height: 10vh;
     z-index: 9999;
+    box-shadow: .005vh .0015vh .5vh .5vh rgba(0, 0, 0, 0.3);
 }
 
 .header nav {

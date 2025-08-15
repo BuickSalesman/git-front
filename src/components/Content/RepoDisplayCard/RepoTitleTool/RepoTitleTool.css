@@ -8,13 +8,6 @@
     width: 96vw;
 }
 
-.title-tool-left {
-    width: 23vw;
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
-}
 
 .title-tool-center {
     width: 50vw;

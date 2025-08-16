@@ -4,4 +4,7 @@
     background-color: red;
     position: absolute;
     left: 10vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }

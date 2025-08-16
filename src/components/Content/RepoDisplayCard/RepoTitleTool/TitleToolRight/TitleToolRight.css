@@ -6,13 +6,13 @@
 
 .right-track {
     display: grid;
-    grid-template-columns: 23vw 50vw;
+    grid-template-columns: 23vw 89vw;
     height: 8vh;
     position: absolute;
     top: 0;
     left: 0;
     z-index: 3;
-    background-color: yellow;
+    background-color: white;
     overflow: hidden;
     transition: transform 280ms;
     will-change: transform;
@@ -38,7 +38,7 @@
     width: 1vw;
     height: 6vh;
     position: absolute;
-    right: 52vw;
+    right: 91vw;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -46,7 +46,7 @@
 }
 
 .right-track.show-swiped {
-    transform: translateX(0);
+    transform: translateX(-16vw);
 }
 
 .right-track.show-closed {

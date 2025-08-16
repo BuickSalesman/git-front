@@ -1,0 +1,81 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>One-time Snake Turn</title>
+    <style>
+        :root {
+            --snake: 90;
+            /* visible length of the snake in px */
+            --dur: 1600ms;
+            /* total duration */
+            --ease: cubic-bezier(.2, .8, .2, 1);
+        }
+
+        body {
+            margin: 0;
+            height: 100vh;
+            display: grid;
+            place-items: center;
+            background: #fafafa;
+        }
+
+        svg {
+            width: 420px;
+            height: 300px;
+        }
+
+        path {
+            fill: none;
+            stroke: black;
+            stroke-width: 6;
+            stroke-linecap: round;
+            /* dasharray will be set with JS to: `${--snake} <pathLength>` */
+            /* dashoffset animates from 0 → -(pathLength - --snake) */
+            animation: slide var(--dur) var(--ease) forwards;
+            animation-iteration-count: 1;
+        }
+
+        @keyframes slide {
+            to {
+                stroke-dashoffset: var(--finalOffset);
+            }
+        }
+
+        /* Respect reduced motion */
+        @media (prefers-reduced-motion: reduce) {
+            path {
+                animation: none;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <svg viewBox="0 0 300 200">
+        <!-- vertical down, smooth quarter curve, then horizontal -->
+        <path id="track" d="M 100 20
+                         L 100 120
+                         Q 100 160 140 160
+                         L 260 160" />
+    </svg>
+
+    <script>
+        // Keep the visible stroke length constant and move it once along the path.
+        const path = document.getElementById('track');
+        const total = path.getTotalLength();                 // path length in px
+        const snake = parseFloat(getComputedStyle(document.documentElement)
+            .getPropertyValue('--snake')) || 90;
+
+        // One visible dash of length `snake`, then a gap large enough to hide the rest.
+        path.style.strokeDasharray = `${snake} ${total}`;
+        // Start at the beginning…
+        path.style.strokeDashoffset = 0;
+        // …and end when the head reaches the end of the path:
+        // final offset is negative by (total - snake)
+        path.style.setProperty('--finalOffset', `${-(total - snake)}px`);
+    </script>
+</body>
+
+</html>

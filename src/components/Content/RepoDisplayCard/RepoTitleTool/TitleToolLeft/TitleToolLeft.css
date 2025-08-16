@@ -1,6 +1,9 @@
 .title-tool-left {
     height: 8vh;
     overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 
 .left-track {

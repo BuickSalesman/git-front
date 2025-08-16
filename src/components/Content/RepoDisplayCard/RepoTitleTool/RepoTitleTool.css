@@ -8,6 +8,7 @@
     width: 96vw;
     display: grid;
     grid-template-columns: minmax(0, 1fr) 50vw minmax(0, 1fr);
+    position: relative;
 }
 
 .title-tool-center {

@@ -7,7 +7,7 @@
     margin-top: 1vh;
     width: 96vw;
     display: grid;
-    grid-template-columns: minmax(0, 1fr) 50vw minmax(0, 1fr);
+    grid-template-columns: 23vw 50vw 23vw;
     position: relative;
 }
 
@@ -17,6 +17,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    z-index: 2;
 }
 
 .swipe-indicator {

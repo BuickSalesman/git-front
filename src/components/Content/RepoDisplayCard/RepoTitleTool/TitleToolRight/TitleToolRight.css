@@ -52,3 +52,9 @@
 .right-track.show-closed {
     transform: translateX(73vw);
 }
+
+.right-grid-2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

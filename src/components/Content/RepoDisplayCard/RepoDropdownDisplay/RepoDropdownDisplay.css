@@ -1,13 +1,31 @@
 .repo-dropdown-display {
-    width: 90vw;
+    overflow: hidden;
+    max-height: 0;
+    transform: scaleY(0);
+    transform-origin: top;
+    transition:
+        max-height 280ms,
+        transform 280ms;
+    will-change: max-height, transform;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
     height: 17vh;
+    width: 90vw;
     border: 1px solid black;
     border-top: none;
     border-bottom-left-radius: 2vh;
     border-bottom-right-radius: 2vh;
 }
 
+.open-card .repo-dropdown-display {
+    max-height: 17vh;
+    transform: scaleY(1);
+}
+
 .heatmap-container {
-    height: 90%;
     width: 90%;
+    height: 70%;
 }

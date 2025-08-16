@@ -1,16 +1,6 @@
-.repo-dropdown-display {
-    display: none
-}
-
 .repo-card {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.open-card .repo-dropdown-display {
-    display: flex;
     justify-content: center;
     align-items: center;
 }

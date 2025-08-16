@@ -1,7 +1,54 @@
 .title-tool-right {
     height: 8vh;
-    display: inline-flex;
+    background-color: blue;
+    overflow: hidden;
+}
+
+.right-track {
+    display: grid;
+    grid-template-columns: 23vw 50vw;
+    height: 8vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 3;
+    background-color: yellow;
+    overflow: hidden;
+    transition: transform 280ms;
+    will-change: transform;
+}
+
+.right-grid-1 {
+    height: 8vh;
+    display: grid;
+    grid-template-columns: 20vw 3vw;
+    place-items: center;
+}
+
+.right-swipe-button {
+    width: 1vw;
+    height: 6vh;
+    display: flex;
     justify-content: center;
     align-items: center;
-    background-color: yellow;
+    border: none;
+}
+
+.right-swipe-button {
+    width: 1vw;
+    height: 6vh;
+    position: absolute;
+    right: 52vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+}
+
+.right-track.show-swiped {
+    transform: translateX(0);
+}
+
+.right-track.show-closed {
+    transform: translateX(73vw);
 }

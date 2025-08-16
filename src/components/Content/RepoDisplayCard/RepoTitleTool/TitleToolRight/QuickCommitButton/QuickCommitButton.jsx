@@ -2,6 +2,6 @@ import "./QuickCommitButton.css"
 
 export function QuickCommitButton() {
     return (
-        <button className="quick-commit-button">QC</button>
+        <button className="quick-commit-button"></button>
     )
 }

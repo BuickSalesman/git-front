@@ -1,0 +1,7 @@
+.quick-commit-button {
+    width: 3vw;
+    height: 2vh;
+    background-color: red;
+    position: absolute;
+    left: 10vw;
+}

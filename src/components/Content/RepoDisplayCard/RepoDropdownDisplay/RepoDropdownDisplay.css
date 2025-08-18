@@ -1,12 +1,9 @@
 .repo-dropdown-display {
-    overflow: hidden;
-    max-height: 0;
-    transform: scaleY(0);
+    transform: translateY(-17vh);
     transform-origin: top;
     transition:
-        max-height 280ms,
         transform 280ms;
-    will-change: max-height, transform;
+    will-change: transform;
 
     display: flex;
     justify-content: center;
@@ -21,11 +18,21 @@
 }
 
 .open-card .repo-dropdown-display {
-    max-height: 17vh;
-    transform: scaleY(1);
+    transform: translateY(0vh)
 }
 
 .heatmap-container {
     width: 90%;
     height: 70%;
+}
+
+.repo-dropdown-wrapper {
+    overflow: hidden;
+    max-height: 0;
+    transition: transform 270ms, max-height 270ms;
+    will-change: transform, max-height;
+}
+
+.open-card .repo-dropdown-wrapper {
+    max-height: 18vh;
 }

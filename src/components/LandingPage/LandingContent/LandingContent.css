@@ -1,6 +1,18 @@
+#landing-page-content {
+    margin-top: 10vh;
+    min-height: 90vh;
+
+    display: grid;
+    grid-template-rows: 1fr 2fr;
+    justify-items: center;
+}
+
 #landing-graph {
     height: 20vh;
     width: 80vw;
-    justify-self: center;
-    padding-top: 13vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 5vh;
 }

@@ -22,10 +22,16 @@
     margin-left: 3vw;
 }
 
-#logout-container {
+#login-container {
     max-width: 40vw;
     background-color: gold;
     float: right;
     margin-top: 3vh;
     margin-right: 3vw;
+
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+
+    gap: 1vw;
 }
